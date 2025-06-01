@@ -11,18 +11,10 @@ float:right;
 			border:none;
 }
 
-/*Makes the dropdown to collapse and expand when clicked*/
-.dropdown.show {
-            visibility: visible;
-            opacity: 1;
-        }
-
-/*The container needed to position thw dropdown content*/
+/*The container needed to position the dropdown content*/
 .dropdown{
 			position:relative;
-    visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s ease, visibility 0.3s ease
+    display:none;
 }
 
 /* Dropdown content*/
@@ -33,6 +25,7 @@ float:right;
 			box-shadow:0px 8px 16px 0px igba(0,0,0,0.2)
 			z-index:1;
 			color:white;
+    display:block;
 }
 
 /*Links inside the dropdown*/
