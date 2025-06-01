@@ -1,3 +1,7 @@
+header{
+float:right;
+}
+
 /* Dropdown button*/
 .dropbtn {
     background-color: hsl(0,0%,40%);
@@ -8,13 +12,7 @@
 }
 
 /*Makes the dropdown to collapse and expand when clicked*/
-.dropdown {
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        .dropdown.show {
+.dropdown.show {
             visibility: visible;
             opacity: 1;
         }
@@ -22,12 +20,13 @@
 /*The container needed to position thw dropdown content*/
 .dropdown{
 			position:relative;
-			display:inline-block;
+    visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s ease
 }
 
 /* Dropdown content*/
 .dropdown-content{
-			display:none;
 			position:absolute;
 			background-color: hsl(0,0%,50%);
 			min-width:160px;
@@ -41,7 +40,6 @@
 			color:white;
 			padding:12px 16px;
 			text-decoration:none;
-			display:block;
 }
 
 /*Change color of dropdown links on hover*/
