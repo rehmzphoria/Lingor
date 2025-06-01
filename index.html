@@ -19,7 +19,12 @@ class="dropbtn">Menu</button>
 <a href="#">Contact</a>
 </div>
 </div>
-
+<script>
+    document.getElementsByClassName("dropbtn")[0].addEventListener("click", function() {
+        let dropdown = document.getElementsByClassName("dropdown")[0];
+        dropdown.className = dropdown.className.includes("show") ? "dropdown" : "dropdown show";
+    });
+</script>
 </header>
 </body>
 </html>
