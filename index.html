@@ -21,7 +21,7 @@ class="dropbtn">Menu</button>
 </div>
 <script>
     document.getElementByClassName("dropbtn").addEventListener("click", function() {
-        let dropdown = document.getElementById("dropdown");
+        let dropdown = document.getElementByClassName("dropdown");
         dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
     });
 </script>
