@@ -7,6 +7,18 @@
 			border:none;
 }
 
+/*Makes the dropdown to collapse and expand when clicked*/
+.dropdown {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .dropdown.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
 /*The container needed to position thw dropdown content*/
 .dropdown{
 			position:relative;
