@@ -1,1 +1,34 @@
+/* Dropdown button*/
+.dropbtn {
+    background-color: hsl(0,0%,50%)
+ 			color:white	;
+			padding:16px;
+			font-size:18px;
+			border:none;
+}
 
+/*The container needed to position thw dropdown content*/
+.dropdown{
+			position:relative;
+			display:inline-block;
+}
+
+/* Dropdown content*/
+.dropdown-content{
+			display:none;
+			position:absolute;
+			background-color: hsl(0,0%,0%);
+			min-width:160px;
+			box-shadow:0px 8px 16px 0px igba(0,0,0,0.2)
+			z-index:1;
+}
+
+/*Links inside the dropdown*/
+.dropdown-content a{
+			color:black;
+			padding:12px 16px;
+			text-decoration:none;
+			display:block;
+}
+
+		
